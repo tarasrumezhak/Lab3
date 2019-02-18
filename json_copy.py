@@ -43,6 +43,14 @@ def dict_info():
 
 
 def manager(data, current, level):
+    '''
+    :param data: json file
+    :param current: json file
+    :param level: list
+    :return: None
+    Navigates trough the json file like a file manager
+    This is recursive function
+    '''
     val = ""
     if (isinstance(current, list)):
         if (len(current) > 0):
